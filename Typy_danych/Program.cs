@@ -7,8 +7,8 @@
             Console.WriteLine("\n Zadanie nr 1 - dane pracownika");
             string firstname;
             string lastname;
-            int age; 
-            char maleOrFemale;
+            int age;
+            char sex;
             string pesel;
             string personId;
 
@@ -25,7 +25,7 @@
             double sideB = 20;
             double diagonal;
             double temporaryValue = Math.Pow(sideA, 2) + Math.Pow(sideB, 2);
-            diagonal = Math.Pow(temporaryValue, 1 / 2d);
+            diagonal = Math.Sqrt(temporaryValue);
             double diagonalRound = Math.Round(diagonal, 2, MidpointRounding.AwayFromZero); // zrobiłem zaokraglenie do 2 miejsc bo wynik kitowo wyglądał
             Console.WriteLine($" Długość przekątnej wynosi {diagonalRound} .");
 
@@ -66,7 +66,7 @@
             Console.WriteLine($" Your weight: {weight} kg");
 
             Console.Write(" Sex, m or f : ");
-            sex = Console.ReadLine();
+            sex = char.Parse(Console.ReadLine());
             Console.WriteLine($" Your sex is: {sex} ");
 
             Console.Write($" Pesel: ");
