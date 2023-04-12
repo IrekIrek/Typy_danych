@@ -66,8 +66,7 @@
             Console.WriteLine($" Your weight: {weight} kg");
 
             Console.Write(" Sex, m or f : ");
-            string sex = Console.ReadLine();
-            char.Parse(sex);
+            sex = Console.ReadLine();
             Console.WriteLine($" Your sex is: {sex} ");
 
             Console.Write($" Pesel: ");
